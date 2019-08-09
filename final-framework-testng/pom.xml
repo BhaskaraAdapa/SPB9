@@ -10,7 +10,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.6.0</version>
+			<version>3.141.59</version>
 
 		</dependency>
 		<dependency>
@@ -52,8 +52,6 @@
 
 	</dependencies>
 
-
-
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -62,7 +60,7 @@
 				<version>3.3</version>
 				<configuration>
 					<source>1.8</source>
-					<target>1.8</target>
+					<target>1.8</target>	
 				</configuration>
 			</plugin>
 		</plugins>

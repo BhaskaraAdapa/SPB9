@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPOM {
+public class LoginPOM 
+{
 	private WebDriver driver; 
 	
 	public LoginPOM(WebDriver driver) {
@@ -13,13 +14,18 @@ public class LoginPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="login")
+	
+	
+	@FindBy(id="input-username")
 	private WebElement userName; 
 	
-	@FindBy(id="password")
+	@FindBy(id="input-password")
 	private WebElement password;
 	
-	@FindBy(id="formLogin_submitAuth")
+	@FindBy(xpath="//i[@class='fa fa-shopping-cart fw']")
+	public WebElement CustomerOptions;	
+	
+	@FindBy(xpath="//button[@class ='btn btn-primary']")
 	private WebElement loginBtn; 
 	
 	public void sendUserName(String userName) {
